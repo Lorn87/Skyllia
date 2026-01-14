@@ -13,6 +13,19 @@ java {
     targetCompatibility = JavaVersion.VERSION_25
 }
 
+tasks {
+    compileJava {
+        options.encoding = "UTF-8"
+    }
+    processResources {
+        filesMatching("**/manifest.json") {
+            expand(rootProject.project.properties)
+        }
+
+        include("manifest.json")
+    }
+}
+
 publishing {
     publications {
         create<MavenPublication>("gpr") {

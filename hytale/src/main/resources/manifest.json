@@ -1,0 +1,13 @@
+{
+  "Group": "euphyllia",
+  "Name": "skyllia",
+  "Version": "${pluginVersion}",
+  "Description": "",
+  "Authors": [{"Name": "Euphyllia"}],
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "fr.euphyllia.skyllia.hytale.HytaleSkylliaPlugin",
+  "IncludesAssetPack": false
+}
