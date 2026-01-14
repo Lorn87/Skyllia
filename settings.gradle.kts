@@ -28,3 +28,11 @@ include("hook:internalworld")
 include("hook:canvas")
 include("hook:luminol")
 include("hook:essentialsx")
+
+val hytaleJar = file("hytale/libs/HytaleServer.jar")
+if (hytaleJar.exists()) {
+    include(":hytale")
+    println("✅ Hytale enabled (${hytaleJar.path})")
+} else {
+    println("⚠ Hytale disabled: missing ${hytaleJar.path}")
+}
